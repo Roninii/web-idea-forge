@@ -26,6 +26,24 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Thanks to Adam Argyle https://codepen.io/argyleink/pen/abXvVME */
+.banner {
+  display: grid;
+
+  > * {
+    grid-area: 1 / 1;
+  }
+  .coming-soon {
+    background: linear-gradient(to right, #6200ee, #04dac6);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &[aria-hidden] {
+      filter: blur(clamp(30px, 4vw, 60px)) saturate(2);
+    }
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
