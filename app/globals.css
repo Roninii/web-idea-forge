@@ -34,7 +34,7 @@ body {
     grid-area: 1 / 1;
   }
   .coming-soon {
-    background: linear-gradient(to right, #6200ee, #04dac6);
+    background: linear-gradient(to right, #ff4500, #ffd700);
     -webkit-background-clip: text;
     color: transparent;
 
