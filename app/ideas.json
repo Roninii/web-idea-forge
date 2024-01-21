@@ -1,24 +1,28 @@
 {
   "ideas": [
     {
+      "id": 1,
       "description_short": "100 Days Tracker",
       "description_long": "For a while, #100DaysOfCode was a popular community where people would commit to learning and practicing code every day for 100 days. This app could help people track their progress and share it with others, and it could be expanded to more than just code.",
       "recommended_stack": [""],
       "tags": ["Full-stack"]
     },
     {
+      "id": 2,
       "description_short": "Battleship clone with websockets",
       "description_long": "A web-based, multiplayer clone of the classic board game Battleship. This would be a good project for learning about websockets and multiplayer games.",
       "recommended_stack": [""],
       "tags": ["Full-stack"]
     },
     {
+      "id": 3,
       "description_short": "A meal plan app that uses ingredients you may already have",
       "description_long": "A web app that helps you plan meals based on what you already have in your fridge and pantry. Tracking what you have might be done via scanning barcodes, or maybe by uploading receipts. Would also be helpful if the user could choose a few recipes, and have the app suggest other recipes that use similar ingredients. Ultimately, the goal is to reduce food waste.",
       "recommended_stack": [""],
       "tags": ["Full-stack"]
     },
     {
+      "id": 4,
       "description_short": "Tinder for food",
       "description_long": "A web app with a similar UI to Tinder, but instead of swiping on people, you swipe on food. You can swipe left to say you don't like a food, or swipe right to say you do like it. The app will learn your preferences and suggest new foods to try.",
       "recommended_stack": [""],
