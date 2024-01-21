@@ -7,7 +7,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
 
   return (
     <main className="p-8">
-      <div className="max-w-screen-md mx-auto bg-zinc-950 rounded p-8">
+      <article className="max-w-screen-md mx-auto bg-zinc-950 rounded p-8">
         <h1 className="text-6xl text-gradient font-medium text-center mb-8">
           {idea?.description_short}
         </h1>
@@ -15,7 +15,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
         <StackRecommendations
           recommended_stack={idea?.recommended_stack ?? []}
         />
-        {idea?.tags.length ? (
+        {/* {idea?.tags.length ? (
           <>
             <ul>
               {idea?.tags.map((tag) => (
@@ -23,8 +23,8 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
               ))}
             </ul>
           </>
-        ) : null}
-      </div>
+        ) : null} */}
+      </article>
     </main>
   );
 }
