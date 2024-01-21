@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -15,6 +16,16 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".text-gradient": {
+          background: "linear-gradient(to right, #ff4500, #ffd700)",
+          backgroundClip: "text",
+          color: "transparent",
+        },
+      });
+    }),
+  ],
 };
 export default config;
