@@ -12,11 +12,12 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
         <h1 className="text-6xl text-gradient font-medium text-center mb-8">
           {idea?.description_short}
         </h1>
-        <p className="mb-8">{idea?.description_long}</p>
+        <p>{idea?.description_long}</p>
         <StackRecommendations
+          className="mt-8"
           recommended_stack={idea?.recommended_stack ?? []}
         />
-        <TagList tags={idea?.tags ?? []} />
+        <TagList className="mt-8" tags={idea?.tags ?? []} />
       </article>
     </main>
   );

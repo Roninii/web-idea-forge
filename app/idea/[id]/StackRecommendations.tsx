@@ -2,11 +2,13 @@ import Badge from "@/app/idea/[id]/Badge";
 
 export default function StackRecommendations({
   recommended_stack,
+  className,
 }: {
   recommended_stack: string[];
+  className?: string;
 }) {
   return recommended_stack?.length ? (
-    <section>
+    <section className={className}>
       <span className="uppercase text-sm font-bold tracking-wide">
         Recommended Stack
       </span>
