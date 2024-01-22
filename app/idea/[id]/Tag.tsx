@@ -15,7 +15,7 @@ export default function Tag({
             height - 2
           } L18,${height - 2}`}
           fill="none"
-          stroke="#ffd700"
+          stroke="rgb(212 212 216)"
           strokeWidth="2"
         />
         <circle
@@ -23,11 +23,11 @@ export default function Tag({
           cx="12.5"
           cy="16"
           fill="none"
-          stroke="#ffd700"
+          stroke="rgb(212 212 216)"
           strokeWidth="2"
         />
       </svg>
-      <span className="border-2 border-l-0 border-gold flex items-center h-8 p-2 pl-1">
+      <span className="border-2 border-l-0 border-zinc-300 text-zinc-200 flex items-center h-8 p-2 pl-1">
         {tag}
       </span>
     </span>

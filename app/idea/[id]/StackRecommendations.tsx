@@ -9,10 +9,10 @@ export default function StackRecommendations({
 }) {
   return recommended_stack?.length ? (
     <section className={className}>
-      <span className="uppercase text-sm font-bold tracking-wide">
+      <span className="uppercase text-sm font-bold tracking-wide text-zinc-300">
         Recommended Stack
       </span>
-      <p className="text-sm text-gray-400">
+      <p className="text-sm text-zinc-400">
         These are just suggestions to get you started! Intended more to aleviate
         friction between getting an idea and getting started. Feel free to use
         whatever you are most comfortable with, or feel free to use a suggestion
