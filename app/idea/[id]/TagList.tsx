@@ -1,4 +1,5 @@
 import Tag from "@/app/idea/[id]/Tag";
+import Label from "./Label";
 
 export default function TagList({
   tags,
@@ -8,14 +9,15 @@ export default function TagList({
   className?: string;
 }) {
   return tags?.length ? (
-    <>
-      <ul className={`flex flex-wrap ${className}`}>
+    <section className={className}>
+      <Label>Tags</Label>
+      <ul className="flex flex-wrap">
         {tags.map((tag) => (
           <li key={tag}>
             <Tag tag={tag} />
           </li>
         ))}
       </ul>
-    </>
+    </section>
   ) : null;
 }
