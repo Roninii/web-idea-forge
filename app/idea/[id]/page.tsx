@@ -1,5 +1,6 @@
 import PROJECT_IDEAS from "@/app/ideas.json";
 import StackRecommendations from "@/app/idea/[id]/StackRecommendations";
+import TagList from "@/app/idea/[id]/TagList";
 
 export default function ProjectDetails({ params }: { params: { id: string } }) {
   const { ideas } = PROJECT_IDEAS;
@@ -15,15 +16,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
         <StackRecommendations
           recommended_stack={idea?.recommended_stack ?? []}
         />
-        {/* {idea?.tags.length ? (
-          <>
-            <ul>
-              {idea?.tags.map((tag) => (
-                <li key={tag}>{tag}</li>
-              ))}
-            </ul>
-          </>
-        ) : null} */}
+        <TagList tags={idea?.tags ?? []} />
       </article>
     </main>
   );
