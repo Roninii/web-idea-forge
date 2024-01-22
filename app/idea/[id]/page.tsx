@@ -1,6 +1,7 @@
 import PROJECT_IDEAS from "@/app/ideas.json";
 import StackRecommendations from "@/app/idea/[id]/StackRecommendations";
 import TagList from "@/app/idea/[id]/TagList";
+import Actions from "./Actions";
 
 export default function ProjectDetails({ params }: { params: { id: string } }) {
   const { ideas } = PROJECT_IDEAS;
@@ -19,6 +20,11 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
             recommended_stack={idea?.recommended_stack ?? []}
           />
           <TagList className="mt-8" tags={idea?.tags ?? []} />
+          <Actions
+            containerClasses="mt-8"
+            projectName={idea?.description_short ?? ""}
+            projectDescription={idea?.description_short ?? ""}
+          />
         </article>
       </div>
     </main>
