@@ -4,7 +4,7 @@
       "id": 1,
       "description_short": "100 Days Tracker",
       "description_long": "For a while, #100DaysOfCode was a popular community where people would commit to learning and practicing code every day for 100 days. This app could help people track their progress and share it with others, and it could be expanded to more than just code.",
-      "recommended_stack": ["Next.js", "Node.js"],
+      "recommended_stack": ["Next.js"],
       "tags": ["Full-stack"]
     },
     {
