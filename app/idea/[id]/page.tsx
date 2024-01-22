@@ -8,7 +8,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
 
   return (
     <main className="p-8">
-      <div className="max-w-screen-md mx-auto p-1 bg-gradient-to-r from-redOrange to-gold rounded-md">
+      <div className="max-w-screen-md mx-auto p-1 bg-gradient-to-r from-vermilion-500 to-gold-500 rounded-md">
         <article className="bg-zinc-950 rounded p-8">
           <h1 className="text-6xl text-gradient font-medium text-center mb-8">
             {idea?.description_short}
