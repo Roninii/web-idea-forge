@@ -3,7 +3,7 @@ export default function Tag({
   height = 34,
 }: {
   tag: string;
-  height: number;
+  height?: number;
 }) {
   const tagCornerYTop = height / 2 + 1;
   const tagCornerYBottom = height / 2 - 1;
