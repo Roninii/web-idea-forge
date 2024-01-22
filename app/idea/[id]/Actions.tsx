@@ -23,11 +23,11 @@ export default function Actions({
       href: "https://github.com",
     },
     {
-      // TODO: Have this present a different project idea
-      name: "Refresh",
-      label: "Generate a new project idea",
-      icon: "Refresh",
-      href: null,
+      // TODO: Have this redirect to the homepage
+      name: "Back",
+      label: "Go back to the homepage",
+      icon: "Back",
+      path: "/",
     },
   ];
 
