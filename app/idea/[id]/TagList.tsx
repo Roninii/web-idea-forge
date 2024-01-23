@@ -11,7 +11,7 @@ export default function TagList({
   return tags?.length ? (
     <section className={className}>
       <Label>Tags</Label>
-      <ul className="flex flex-wrap">
+      <ul className="flex flex-wrap gap-4">
         {tags.map((tag) => (
           <li key={tag}>
             <Tag tag={tag} />
