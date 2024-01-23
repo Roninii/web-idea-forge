@@ -1,3 +1,6 @@
+import { VscChevronLeft, VscGithub, VscTwitter } from "react-icons/vsc";
+import Link from "next/link";
+
 export default function Actions({
   projectName,
   projectDescription,
@@ -7,35 +10,22 @@ export default function Actions({
   projectDescription: string;
   containerClasses?: string;
 }) {
-  const actions = [
-    {
-      // TODO: Have this prepopulate a tweet https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview
-      name: "X",
-      label: "Share to X",
-      icon: "X",
-      href: "https://x.com",
-    },
-    {
-      // TODO: Have this create a GH repo and prepopulate the name and description
-      name: "GitHub",
-      label: "Create a new GitHub repo",
-      icon: "GitHub",
-      href: "https://github.com",
-    },
-    {
-      // TODO: Have this redirect to the homepage
-      name: "Back",
-      label: "Go back to the homepage",
-      icon: "Back",
-      path: "/",
-    },
-  ];
+  const repoLink = `https://github.com/new?name=${projectName}&description=${projectDescription}`;
 
   return (
     <section
       className={`flex justify-center items-center gap-4 ${containerClasses}`}
     >
-      Actions
+      <Link href="/" title="Go back">
+        <VscChevronLeft size={25} />
+      </Link>
+      {/* TODO: Make this link prefill a tweet */}
+      <Link href="https://x.com" title="Share to twitter">
+        <VscTwitter size={25} />
+      </Link>
+      <Link href={repoLink} title="Create GitHub Repo">
+        <VscGithub size={25} />
+      </Link>
     </section>
   );
 }

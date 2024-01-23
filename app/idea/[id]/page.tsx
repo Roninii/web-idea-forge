@@ -23,7 +23,7 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
           <Actions
             containerClasses="mt-8"
             projectName={idea?.description_short ?? ""}
-            projectDescription={idea?.description_short ?? ""}
+            projectDescription={idea?.description_long ?? ""}
           />
         </article>
       </div>
