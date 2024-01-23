@@ -11,6 +11,7 @@ export default function Actions({
   containerClasses?: string;
 }) {
   const repoLink = `https://github.com/new?name=${projectName}&description=${projectDescription}`;
+  const tweetLink = `https://twitter.com/intent/tweet?text=I've accepted the challenge of building ${projectName}! Follow to keep me accountable and see my progress as I build in public! Get an idea for your next web project at https://webideaforge.vercel.app/.&hashtags=WebIdeaForge,BuildInPublic&related=_ronini`;
 
   return (
     <section
@@ -20,10 +21,10 @@ export default function Actions({
         <VscChevronLeft size={25} />
       </Link>
       {/* TODO: Make this link prefill a tweet */}
-      <Link href="https://x.com" title="Share to twitter">
+      <Link href={tweetLink} title="Share to twitter" target="_blank">
         <VscTwitter size={25} />
       </Link>
-      <Link href={repoLink} title="Create GitHub Repo">
+      <Link href={repoLink} title="Create GitHub Repo" target="_blank">
         <VscGithub size={25} />
       </Link>
     </section>
