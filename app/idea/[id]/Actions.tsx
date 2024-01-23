@@ -12,7 +12,7 @@ export default function Actions({
 }) {
   const parsedProjectDescription = encodeURIComponent(projectDescription);
   const repoLink = `https://github.com/new?name=${projectName}&description=${parsedProjectDescription}`;
-  const tweetLink = `https://twitter.com/intent/tweet?text=I've accepted the challenge of building ${projectName}! Follow to keep me accountable and see my progress as I build in public! Get an idea for your next web project at https://webideaforge.vercel.app/.&hashtags=WebIdeaForge,BuildInPublic&related=_ronini`;
+  const tweetLink = `https://twitter.com/intent/tweet?text=I've accepted the challenge of building ${projectName}! Follow to keep me accountable and see my progress as I build in public. Get an idea for your next web project at https://webideaforge.vercel.app/.&hashtags=WebIdeaForge,BuildInPublic&related=_ronini`;
 
   return (
     <section
@@ -21,7 +21,6 @@ export default function Actions({
       <Link href="/" title="Go back">
         <VscChevronLeft size={25} />
       </Link>
-      {/* TODO: Make this link prefill a tweet */}
       <Link href={tweetLink} title="Share to twitter" target="_blank">
         <VscTwitter size={25} />
       </Link>
