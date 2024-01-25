@@ -2,7 +2,7 @@ import ProjectIdea from "./ProjectIdea";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center p-24">
+    <main className="flex flex-col justify-center items-center p-24">
       <div className="banner">
         <h1
           className="text-6xl lg:text-9xl font-medium coming-soon"
