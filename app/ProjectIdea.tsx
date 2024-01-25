@@ -1,12 +1,19 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PROJECT_IDEAS from "./ideas.json";
 import Link from "next/link";
 
+type Idea = {
+  id: number;
+  description_short: string;
+  description_long: string;
+  recommended_stack: string[];
+  tags: string[];
+};
+
 export default function ProjectIdea() {
   const { ideas } = PROJECT_IDEAS;
-  const randomIdea = ideas[Math.floor(Math.random() * ideas.length)];
-  const [idea, setIdea] = useState(randomIdea);
+  const [idea, setIdea] = useState<Idea | undefined>(undefined);
   const [previousIdeas, setPreviousIdeas] = useState<(typeof idea)[]>([]);
 
   const newIdea = () => {
@@ -24,14 +31,20 @@ export default function ProjectIdea() {
     setIdea(newRandomIdea);
   };
 
+  useEffect(() => newIdea, []);
+
   return (
     <div className="mt-8 grid gap-4">
-      <h2 className="text-center text-xl lg:text-4xl">
-        {idea.description_short}
-      </h2>
+      {idea ? (
+        <h2 className="text-center text-xl lg:text-4xl">
+          {idea.description_short}
+        </h2>
+      ) : (
+        <h2 className="text-center text-xl lg:text-4xl">Forging...</h2>
+      )}
       <div className="flex justify-center items-center gap-4">
         <Link
-          href={`/idea/${idea.id}`}
+          href={`/idea/${idea?.id}`}
           className="text-gray-400 text-center text-lg lg:text-xl hover:text-gradient"
         >
           More Info
