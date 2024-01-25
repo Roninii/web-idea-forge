@@ -1,7 +1,5 @@
 # Web Idea Forge
 
----
-
 ## What is it?
 
 Web Idea Forge is a really simple app built using Next.js & Tailwind. I built this to serve as both: a place for me to throw my ideas that I may or may not ever get around to, and as a place that maybe others who are struggling to come up with ideas for what to build next can find inspiration.
