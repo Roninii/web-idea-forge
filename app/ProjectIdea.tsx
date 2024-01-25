@@ -31,7 +31,7 @@ export default function ProjectIdea() {
     setIdea(newRandomIdea);
   };
 
-  useEffect(() => newIdea, []);
+  useEffect(() => newIdea(), []);
 
   return (
     <div className="mt-8 grid gap-4">
