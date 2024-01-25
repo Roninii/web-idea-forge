@@ -26,12 +26,12 @@ export default function RootLayout({
         className={`${LeagueSpartanVariable.className} min-h-screen grid grid-rows-[1fr_auto]`}
       >
         {children}
-        <footer className="flex gap-4 justify-center items-baseline p-8 font-semibold text-lg">
+        <footer className="flex gap-4 justify-center items-baseline p-8 font-semibold text-lg text-zinc-400">
           <Link
             href="https://ronini.dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline transition-all duration-300 ease-out"
+            className="hover:underline hover:text-zinc-100 transition-all duration-300 ease-out"
           >
             Made with 🍺 and 🎵 by <span className="text-gradient">Ronini</span>
           </Link>{" "}
@@ -40,7 +40,7 @@ export default function RootLayout({
             href="https://github.com/Roninii/web-idea-forge"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline transition-all duration-300 ease-out"
+            className="hover:underline hover:text-zinc-100 transition-all duration-300 ease-out"
           >
             <span className="flex items-baseline gap-1">
               <VscGithub />
