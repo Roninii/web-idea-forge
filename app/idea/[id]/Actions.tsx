@@ -10,7 +10,8 @@ export default function Actions({
   projectDescription: string;
   containerClasses?: string;
 }) {
-  const repoLink = `https://github.com/new?name=${projectName}&description=${projectDescription}`;
+  const parsedProjectDescription = encodeURIComponent(projectDescription);
+  const repoLink = `https://github.com/new?name=${projectName}&description=${parsedProjectDescription}`;
   const tweetLink = `https://twitter.com/intent/tweet?text=I've accepted the challenge of building ${projectName}! Follow to keep me accountable and see my progress as I build in public! Get an idea for your next web project at https://webideaforge.vercel.app/.&hashtags=WebIdeaForge,BuildInPublic&related=_ronini`;
 
   return (
