@@ -7,7 +7,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+/* #1A1A1A (almost black) and #4A4A4A */
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,30 +18,24 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #010101;
 }
 
 /* Thanks to Adam Argyle https://codepen.io/argyleink/pen/abXvVME */
 .banner {
   display: grid;
-
-  > * {
-    grid-area: 1 / 1;
-  }
-  .coming-soon {
-    background: linear-gradient(to right, #6200ee, #04dac6);
-    -webkit-background-clip: text;
-    color: transparent;
-
-    &[aria-hidden] {
-      filter: blur(clamp(30px, 4vw, 60px)) saturate(2);
-    }
-  }
+}
+.banner > * {
+  grid-area: 1 / 1;
+}
+.banner .coming-soon {
+  background: linear-gradient(to right, #ff4500, #ffd700);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.banner .coming-soon[aria-hidden] {
+  filter: blur(clamp(30px, 4vw, 60px)) saturate(2);
 }
 
 @layer utilities {

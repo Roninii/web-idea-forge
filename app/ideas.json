@@ -1,0 +1,102 @@
+{
+  "ideas": [
+    {
+      "id": 1,
+      "description_short": "100 Days Tracker",
+      "description_long": "For a while, #100DaysOfCode was a popular community where people would commit to learning and practicing code every day for 100 days. This app could help people track their progress and share it with others, and it could be expanded to more than just code.",
+      "recommended_stack": ["Next.js", "Tailscale"],
+      "tags": ["Full-stack"]
+    },
+    {
+      "id": 2,
+      "description_short": "Battleship clone with websockets",
+      "description_long": "A web-based, multiplayer clone of the classic board game Battleship. This would be a good project for learning about websockets and multiplayer games.",
+      "recommended_stack": [],
+      "tags": ["Full-stack"]
+    },
+    {
+      "id": 3,
+      "description_short": "A meal plan app that uses ingredients you may already have",
+      "description_long": "A web app that helps you plan meals based on what you already have in your fridge and pantry. Tracking what you have might be done via scanning barcodes, or maybe by uploading receipts. Would also be helpful if the user could choose a few recipes, and have the app suggest other recipes that use similar ingredients. Ultimately, the goal is to reduce food waste.",
+      "recommended_stack": [],
+      "tags": ["Full-stack"]
+    },
+    {
+      "id": 4,
+      "description_short": "Tinder for food",
+      "description_long": "A web app with a similar UI to Tinder, but instead of swiping on people, you swipe on food. You can swipe left to say you don't like a food, or swipe right to say you do like it. The app will learn your preferences and suggest new foods to try.",
+      "recommended_stack": [],
+      "tags": ["Full-stack", "Front-end"]
+    },
+    {
+      "id": 5,
+      "description_short": "Pokemon Egg Pomodoro Timer",
+      "description_long": "A pomodoro timer that uses Pokemon eggs as a reward for completing pomodoros. The user can choose a Pokemon egg, and then set a timer for 25 minutes. When the timer is up, the user will be notified that their Pokemon egg has hatched. The user can then choose to start another pomodoro, or take a break.",
+      "recommended_stack": ["Vue.js", "Tailscale"],
+      "tags": ["Full-stack"]
+    },
+    {
+      "id": 6,
+      "description_short": "Currently listening to widget",
+      "description_long": "A widget that displays what you're currently listening to on Spotify, Apple Music, or another music streaming service. Could be tricky to implement since Spotify forces a login to view what someone is listening to.",
+      "recommended_stack": [],
+      "tags": ["Full-stack", "Front-end"]
+    },
+    {
+      "id": 7,
+      "description_short": "TikTok for game trailers",
+      "description_long": "An app that has a similar UI to that of TikTok, but with the sole premise being to view, like, and share game trailers.",
+      "recommended_stack": [],
+      "tags": ["Full-stack", "Front-end", "Mobile"]
+    },
+    {
+      "id": 8,
+      "description_short": "Goodreads for games",
+      "description_long": "There are other sites that allow tracking reviews and ratings for games, but there always seems to be something missing. Those that have really good rating and community features are lacking in auto-import functionality. Those with good auto-import functionality are usually focused more on launcher replacement/consolidation (e.g. GOG Galaxy or Playnite). We need somethign that auto-imports your libraries across multiple platforms, allows some way to track your play state and hours, and prompts you to leave a review. Community would still have to be the driving factor and hopefully it has a better UI than Goodreads...",
+      "recommended_stack": [],
+      "tags": ["Full-stack"]
+    },
+    {
+      "id": 9,
+      "description_short": "A navbar generator",
+      "description_long": " Similar to the hero generator by Sara Drasner, make a navbar generator that allows you to quickly spit out a navbar in a few different languages/frameworks.",
+      "recommended_stack": [],
+      "tags": ["Front-end"]
+    },
+    {
+      "id": 10,
+      "description_short": "Dev simulator",
+      "description_long": "A game (web based or otherwise, it doesn't matter) that centers around a Developer's work life. Get creative! Could be a specific type of dev, could include aspects outside of just work, etc.",
+      "recommended_stack": [],
+      "tags": []
+    },
+    {
+      "id": 11,
+      "description_short": "Pokemon or Animal-type focus app.",
+      "description_long": "Inspired by the focus app Forest, make a focus app that has some other collectible. If you're going to attempt to monotize, don't even think about using Pokemon. Could maybe add zones or biomes to organize your collection over time, creating little scenes or just some form of display. Add todo list functionality to allow for gaining cosmetic items by completing tasks.",
+      "recommended_stack": [],
+      "tags": ["Full-stack"]
+    },
+    {
+      "id": 12,
+      "description_short": "Apple fitness workout plan generator",
+      "description_long": "It's kind of annoying how hard it is for someone without proer experience to put together a functional workout plan using services like Apple Fitness where their pre-made collections are limited. Make something to make it eaier for both beginners and advanced users to build a workout plan targeted at their specific goals.",
+      "recommended_stack": [],
+      "tags": []
+    },
+    {
+      "id": 13,
+      "description_short": "A tech stack generator",
+      "description_long": "A web app that allows you to choose various parts of a stack and visualize how those peices will fit together. Bonus points examples of what the DX would look like or code samples.",
+      "recommended_stack": [],
+      "tags": []
+    },
+    {
+      "id": 14,
+      "description_short": "Outfit selector",
+      "description_long": "Similar to the Cher Horowitz's closet from Clueless, make an app that allows you to select an outfit from your closet. Bonus points for allowing you to add new items to your closet by scanning barcodes.",
+      "recommended_stack": [],
+      "tags": []
+    }
+  ]
+}
