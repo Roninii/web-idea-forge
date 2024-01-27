@@ -97,6 +97,13 @@
       "description_long": "Similar to the Cher Horowitz's closet from Clueless, make an app that allows you to select an outfit from your closet. Bonus points for allowing you to add new items to your closet by scanning barcodes.",
       "recommended_stack": [],
       "tags": []
+    },
+    {
+      "id": 15,
+      "description_short": "Racyast for Windows",
+      "description_long": "Mac has an abundance of cool developer tools, and Raycast is among the most notable. Windows has some similar apps, but they all feel lacking by comparison. Make a Raycast clone for Windows with loads of built in functionality, but importantly, the ability to add plugins.",
+      "recommended_stack": [],
+      "tags": ["Desktop", "Full-stack"]
     }
   ]
 }
