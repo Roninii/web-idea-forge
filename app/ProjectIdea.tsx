@@ -36,9 +36,17 @@ export default function ProjectIdea() {
   return (
     <div className="mt-8 grid gap-4">
       {idea ? (
-        <h2 className="text-center text-xl lg:text-4xl">
-          {idea.description_short}
-        </h2>
+        <div className="banner">
+          <h2
+            className="text-center text-6xl lg:text-8xl glow"
+            aria-hidden="true"
+          >
+            {idea.description_short}
+          </h2>
+          <h2 className="text-center text-6xl lg:text-8xl glow">
+            {idea.description_short}
+          </h2>
+        </div>
       ) : (
         <h2 className="text-center text-xl lg:text-4xl">Forging...</h2>
       )}

@@ -28,13 +28,13 @@ body {
 .banner > * {
   grid-area: 1 / 1;
 }
-.banner .coming-soon {
+.banner .glow {
   background: linear-gradient(to right, #ff4500, #ffd700);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-.banner .coming-soon[aria-hidden] {
+.banner .glow[aria-hidden] {
   filter: blur(clamp(30px, 4vw, 60px)) saturate(2);
 }
 
