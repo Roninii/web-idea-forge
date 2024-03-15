@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import PROJECT_IDEAS from "./ideas.json";
 import Link from "next/link";
-import Button from "./Button";
 
 type Idea = {
   id: number;
@@ -39,25 +38,29 @@ export default function ProjectIdea() {
       {idea ? (
         <div className="banner">
           <h2
-            className="glow text-center text-6xl lg:text-8xl"
+            className="text-center text-6xl lg:text-8xl glow"
             aria-hidden="true"
           >
             {idea.description_short}
           </h2>
-          <h2 className="glow text-center text-6xl lg:text-8xl">
+          <h2 className="text-center text-6xl lg:text-8xl glow">
             {idea.description_short}
           </h2>
         </div>
       ) : (
         <h2 className="text-center text-xl lg:text-4xl">Forging...</h2>
       )}
-      <div className="flex items-center justify-center gap-4">
-        <Button>
-          <Link href={`/idea/${idea?.id}`}>More Info</Link>
-        </Button>
+      <div className="flex justify-center items-center gap-4">
+        <Link
+          href={`/idea/${idea?.id}`}
+          className="text-gray-400 text-center text-lg lg:text-xl hover:text-gradient"
+        >
+          More Info
+        </Link>
+        |
         <button
           onClick={newIdea}
-          className="hover:text-gradient text-center text-lg text-gray-400 lg:text-xl"
+          className="text-gray-400 text-center text-lg lg:text-xl hover:text-gradient"
         >
           New Idea
         </button>
