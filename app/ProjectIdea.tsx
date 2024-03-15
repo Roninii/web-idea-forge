@@ -59,7 +59,7 @@ export default function ProjectIdea() {
           <span className="group-hover:text-gradient text-center text-gray-400">
             More Info
           </span>
-          <VscArrowSmallRight className="absolute right-0 top-1/2 ml-2 -translate-y-1/2  transform opacity-0 transition-all duration-300 ease-out group-hover:inline group-hover:translate-x-2 group-hover:opacity-100" />
+          <VscArrowSmallRight className="absolute right-0 top-1/2 ml-2 -translate-y-1/2 transform  text-white opacity-0 transition-all duration-300 ease-out group-hover:inline group-hover:translate-x-2 group-hover:opacity-100" />
           <hr className="from-vermilion-500 to-gold-500 mx-auto h-0.5 transform border-0 bg-gradient-to-r opacity-0 duration-300 group-hover:translate-y-1 group-hover:opacity-100" />
         </Link>
       </div>
