@@ -10,14 +10,14 @@ export default function ProjectDetails({ params }: { params: { id: string } }) {
   const idea = ideas.find((idea) => idea.id === parseInt(params.id));
 
   return (
-    <main className="p-8">
+    <main className="grid min-h-[70svh] p-4 md:place-items-center md:p-8">
       <Transition>
         <div className="from-vermilion-500 to-gold-500 mx-auto max-w-screen-md rounded-md bg-gradient-to-r p-1 text-gray-100">
           <article className="rounded bg-zinc-950 p-8">
             <h1 className="text-gradient mb-8 text-center text-6xl font-medium">
               {idea?.description_short}
             </h1>
-            <p>{idea?.description_long}</p>
+            <p className="text-xl">{idea?.description_long}</p>
             <StackRecommendations
               className="mt-8"
               recommended_stack={idea?.recommended_stack ?? []}

@@ -23,24 +23,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${LeagueSpartanVariable.className} min-h-screen grid grid-rows-[1fr_auto]`}
+        className={`${LeagueSpartanVariable.className} grid min-h-screen grid-rows-[1fr_auto]`}
       >
         {children}
-        <footer className="flex gap-4 justify-center items-baseline p-8 font-semibold text-lg text-zinc-400">
+        <footer className="flex flex-col items-center justify-center gap-4 p-8 text-lg font-semibold text-zinc-400 md:flex-row md:items-baseline">
           <Link
             href="https://ronini.dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline hover:text-zinc-100 transition-all duration-300 ease-out"
+            className="transition-all duration-300 ease-out hover:text-zinc-100 hover:underline"
           >
             Made with 🍺 and 🎵 by <span className="text-gradient">Ronini</span>
           </Link>{" "}
-          |
+          <span className="hidden md:inline-block">|</span>
           <Link
             href="https://github.com/Roninii/web-idea-forge"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline hover:text-zinc-100 transition-all duration-300 ease-out"
+            className="transition-all duration-300 ease-out hover:text-zinc-100 hover:underline"
           >
             <span className="flex items-baseline gap-1">
               <VscGithub />
